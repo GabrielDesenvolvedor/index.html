@@ -108,14 +108,14 @@
             border-bottom: 1px solid #0066cc;
             color: black;
         }
-               .container {
+        .container {
   position: relative;
   width: 100%;
   height: 100vh; /* Ajuste conforme necessário */
 }
 
 .botao-redirecionar {
- width: 70px;
+  width: 70px;
   position: absolute;
   top: 1%; /* Posição vertical */
   right: 160px; /* Posição horizontal */
@@ -127,19 +127,44 @@
   transition: transform 0.3s ease; /* Adiciona uma animação de transição */
 }
 
-.botao-redirecionar:hover {
-  transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o mouse sobre ele */
+.botao-oleo-granel {
+  width: 70px;
+  position: absolute;
+  top: 1%;
+  right: 70px; /* Posiciona o novo botão ao lado do botão existente com um espaçamento de 20px */
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  border: 2px solid #333;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
-.botao-redirecionar img {
+.botao-redirecionar:hover,
+.botao-oleo-granel:hover {
+  transform: scale(1.1);
+}
+
+.botao-redirecionar img,
+.botao-oleo-granel img {
   max-width: 100%;
   height: auto;
   display: block;
 }
-.botao-redirecionar img {
-  max-width: 100%;
-  height: auto;
+
+.nome-pagina {
   display: block;
+  margin-top: 5px; /* Adiciona uma margem superior para separar o texto da imagem */
+  font-size: 14px; /* Ajusta o tamanho da fonte */
+  color: #333; /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+}
+.oleo-granel {
+  display: block;
+  margin-top: 5px; /* Adiciona uma margem superior para separar o texto da imagem */
+  font-size: 14px; /* Ajusta o tamanho da fonte */
+  color: #333; /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
 }
 
 
@@ -199,11 +224,16 @@
                     </tr>
                 </table>
             </div>
-    <div class="container">
-    <a href="https://gabrieldesenvolvedor.github.io/indexcontrole.html/controle%20de%20produtos/controle%20de%20produtos%20-%20ABRIR.html" class="botao-redirecionar">
+        </div>
+        <div class="container">
+    <a href="https://gabrieldesenvolvedor.github.io/indexcontrole.html/controle%20de%20produtos/controle%20de%20produtos%20-%20ABRIR.html" class="botao-redirecionar" target="_blank">
       <img src="./assets/Captura de tela 2024-02-04 065241.png" alt="Controle de produtos">
-      
+      <span class="nome-pagina">Produtos</span> 
     </a>
+    <a href="https://gabrieldesenvolvedor.github.io/index.Granel/index.html.html" class="botao-oleo-granel" target="_blank">
+        <img src="./assets/capitura].png" alt="Óleo a Granel">
+      <span class="oleo-granel">Granel</span> 
+      </a>
     
   </div>
     </div>
